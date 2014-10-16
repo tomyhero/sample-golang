@@ -2,6 +2,7 @@ package main
 
 import (
 	"./function"
+	"strconv"
 )
 
 func main() {
@@ -10,4 +11,7 @@ func main() {
 	boo.Echo()
 
 	function.RunCho()
+
+	childhood := function.Childhood{Age: 10}
+	function.Echo(strconv.Itoa(childhood.MyAge()))
 }
